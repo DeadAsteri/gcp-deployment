@@ -32,6 +32,10 @@ jobs:
       run: |
         gcloud services enable cloudbuild.googleapis.com
 
+    - name: Enable Cloud Resource Manager API
+      run: |
+        gcloud services enable cloudresourcemanager.googleapis.com
+
     - name: Deploy to Cloud Functions
       run: |
         gcloud functions deploy helloWorld \
