@@ -39,6 +39,6 @@ jobs:
     - name: Deploy to Cloud Functions
       run: |
         gcloud functions deploy helloWorld \
-          --runtime nodejs14 \
+          --runtime nodejs18 \
           --trigger-http \
           --allow-unauthenticated
